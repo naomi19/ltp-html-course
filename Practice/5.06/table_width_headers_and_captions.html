@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+    </head>
+    <body>
+       <style>
+       table
+           {
+               width: 100%;
+           }
+       table, tr, td, th
+           {
+             border:3px solid black;  
+             border-collapse: collapse;
+           }
+       th
+           {
+               background-color:darkmagenta;
+               color: white;
+           }
+       td
+           {
+               color:darkmagenta
+           }
+       caption
+           {
+               color:black;
+               font-weight:bold;
+               font-size:30px;
+           }
+       </style>
+       <table cellpadding = "3">
+           <caption>Favorite Classical Songs and Ratings</caption>
+           <tr>
+              <th width = "50%">Song</th><th width = "25%">Artist</th><th width = "25%">Rating</th>
+           </tr>
+           <tr>
+              <td>River Flows in You</td><td rowspan="2">Yiruma</td><td>*****</td>
+           </tr>
+           <tr>
+              <td>Kiss the Rain</td><td>****</td>
+           </tr>
+           <tr>
+              <td>Nuvole Bianche</td><td>Ludovico Einaudi</td><td>***</td>
+           </tr>
+           <tr>
+              <td>Canon in D</td><td>Johann Pachelbel</td><td>****</td>
+           </tr>
+           <tr>
+              <td>Moonlight Sonata</td><td>Beethoven</td><td>****</td>
+           </tr>
+           <tr>
+              <td>Mariage d’Amour</td><td>Paul de Senneville</td><td>***</td>
+           </tr> 
+           <tr>
+              <td>Nocturne op.9 No.2</td><td>Chopin</td><td>****</td>
+           </tr>
+           <tr>
+              <td>1812 Overture</td><td>Tchaikovsky</td><td>****</td>
+           </tr>
+           <tr>
+              <td>Turkish March</td><td>Mozart</td><td>*****</td>
+           </tr>
+       </table>
+    </body>
+</html>
