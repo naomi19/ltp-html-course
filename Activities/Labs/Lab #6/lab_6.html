@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab #5</title>
+    </head>
+    <body>
+        <style>
+        input[type = text],input[type = date]
+            {
+                width: 40%;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+        textarea
+            {
+                width: 1290%;
+                max-width:1290px;
+                height: 100px;
+                max-height: 100px;
+            }
+        </style>
+        <form action = "#" method = "post">
+            <fieldset>
+            <label for = "name">Patient Name</label>
+            <input type = "text" id = "name" required = "required" maxlength = "50" autocomplete = "off"/>
+            <label for = "birthdate">Birth Date</label>
+            <input type = "date" id = "birthdate" required = "required"/>
+            <p>Although dental personnel primarily treat the area in and around you mouth, your mouth is a part of your entire body. Health problems that you may have, or medication that you may be taking, could have an important interrelationship with the dentistry you will receive. Thank you for answering the following questions.</p>
+            </fieldset>
+            <fieldset>
+                <p>Are you under a physician's care now?</p>    
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                    <label for = "explain">If yes, please explain</label>
+                    <input type = "text" name = "explain"/>
+                <p>Have you ever been hospitalized or had a major operation?</p>
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                    <label for = "explain">If yes, please explain</label>
+                    <input type = "text" name = "explain"/>
+                <p>Have you ever had a serious head or neck injury?</p>
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes" />
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                    <label for = "explain">If yes, please explain</label>
+                    <input type = "text" name = "explain"/>
+                <p>Are you taking any medications, pills, or drugs?</p>
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                    <label for = "explain">If yes, please explain</label>
+                    <input type = "text" name = "explain"/>
+                <p>Do you take, or have you taken, Phen-Fen or Redux?</p>
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                    <label for = "explain">If yes, please explain</label>
+                    <input type = "text" name = "explain"/>
+                <p>Have you ever taken Fosamax, Boniva, Actonel or any other medication containing bisphosphonates?</p>
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                    <label for = "explain">If yes, please explain</label>
+                    <input type = "text" name = "explain"/>
+                <p>Are you on a special diet?</p>
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                <p>Do you use tobacco?</p>
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                <p>Do you use controlled substances?</p>
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+            </fieldset>
+            <fieldset>
+             <legend>Women: Are you</legend>
+                <p>Pregnant/Trying to get pregnant?<label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                   Taking oral contraceptives?<label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                   Nursing? <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Are you allergic to any of the following?</legend>
+                <p>
+                    <label id = "allergies">Aspirin</label>
+                    <input type = "checkbox" name = "allergies" value = "Aspirin"/>
+                    <label id = "allergies">Penicillin</label>
+                    <input type = "checkbox" name = "allergies" value = "Penicillin"/>
+                    <label id = "allergies">Codeine</label>
+                    <input type = "checkbox" name = "allergies" value = "Codeine"/>
+                    <label id = "allergies">Local Anesthetics</label>
+                    <input type = "checkbox" name = "allergies" value = "Local Anesthetics"/>
+                    <label id = "allergies">Acrylic</label>
+                    <input type = "checkbox" name = "allergies" value = "Acrylic"/>
+                    <label id = "allergies">Metal</label>
+                    <input type = "checkbox" name = "allergies" value = "Metal"/>
+                    <label id = "allergies">Latex</label>
+                    <input type = "checkbox" name = "allergies" value = "Latex"/>
+                    <label id = "allergies">Sulfa drugs</label>
+                    <input type = "checkbox" name = "allergies" value = "Sulfa drugs"/>
+                </p>
+                <p>
+                    <label id = "allergies">Other</label>
+                    <input type = "checkbox" name = "allergies" value = "Other"/>
+                    <label id = "explain">If yes, please explain</label>
+                    <input type = "text" name = "explain"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Do you have, or have you had any of the following?</legend>
+                <p>AIDS/HIV Positive <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Alzheimer's Disease<label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Anaphylaxis<label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Anemia<label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Angina
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Arthritis/Gout
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Artificial Heart Valve
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Artificial Joint
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Asthma
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Blood Disease
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Blood Transfusion
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Breathing Problem
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Bruise Easily
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Cancer
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Chemotherapy
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Chest Pains
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Cold Sores/Fever Blisters
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Congenital Heart Disorder
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Convulsions
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Cortisone Medicine
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Diabetes
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Drug Addiction
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Easily Winded
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Emphysema
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Epilepsy or Seizures
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Excessive Bleeding
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Excessive Thirst
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Fainting Spells/Dizziness
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Frequent Cough
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Frequent Diarrhea
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Frequent Headaches
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Genital Herpes
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Glaucoma
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Hay Fever
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Heart Attack/Failure
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Heart Murmur
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Heart Pacemaker
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Heart Trouble/Disease
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Hemophilia
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Hepatitis A
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Hepatitis B or C
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Herpes
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>High Blood Pressure
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>High Cholesterol
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Hives or Rash
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Hypoglycemia
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Irregular Heartbeat
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Kidney Problems
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Leukemia
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Liver Diesease
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Low Blood Pressure
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Lung Disease
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Mitral Valve Prolapse
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Osteoporosis
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Pain in Jaw Joints
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Parathyriod Disease
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Psychiatric Care
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Radiation Treatments
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Recent Weight Loss
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Renal Dialysis
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Rheumatic Fever
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Rheumatism
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Scarlet Fever
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Shingles
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Sickle Cell Disease
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Sinus Trouble
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Spina Bifida
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Stomach/Intestinal Disease
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Stroke
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Swelling of Limbs
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Thyroid Disease
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Tonsillitis
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Tubercullosis
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Tumors or Growths
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Ulcers
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Venereal Disease
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Yellow Jaundice
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/></p>
+                <p>Have you ever had any serious sickness not listed above?
+                    <label id = "yes">Yes</label>
+                    <input type = "radio" name = "yes" value = "yes"/>
+                    <label id = "no">No</label>
+                    <input type = "radio" name = "no" value = "no"/>
+                    <label id = "explain">If yes, please explain</label>
+                    <input type = "text" name = "explain"/></p>
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <label for = "comments"></label>
+                <textarea id = "comments"></textarea>
+            </fieldset>
+            <p>To the best of my knowledge, the questions on this form have been accurately answered. I understand that providing incorrect information can be dangerous to my (or my patient's) health. It is my responsibility to inform the dental office of any changes in medical status.</p>
+            <fieldset>
+                    <label for = "signature">SIGNATURE OF PATIENT, PARENT, OR GUARDIAN.</label>
+                    <input type = "text" name = "signature" required = "required" autocomplete = "off"/><br/>
+                    <label for = "date">Date</label>
+                    <input type = "date" name = "date" required = "required"/>
+            </fieldset>
+            <button type = "reset">Reset</button>
+        </form>
+    </body>
+</html>
