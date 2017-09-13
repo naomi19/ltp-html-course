@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+       <style>
+       textarea
+           {
+               width:300px;
+               height:200px;
+           }
+       </style>
+        <form action = "#" method = "post"></form>
+        <label for = "first">First</label>
+        <input type = "text" id = "first" name = "first" required = "required" autocomplete = "off"/><br/>
+        <label for = "last">Last</label>
+        <input type = "text" id = "last" name = "last" required = "required" autocomplete = "off"/><br/>
+        <label for = "email">Email</label>
+        <input type = "text" id = "email" name = "email" required = "required" autocomplete = "off"/><br/>
+        <textarea id = "bio">Type Your Biography</textarea><br/>
+        <label id = "birthday">Birthday</label><br/> 
+        <input type = "radio" name = "birthday" value = "birthday" checked = "checked"/>January<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>February<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>March<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>April<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>May<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>June<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>July<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>August<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>September<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>October<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>November<br/>
+        <input type = "radio" name = "birthday" value = "birthday"/>December<br/>
+        <select id = "age" name = "age">
+           <option value = "Under 18">Under 18</option>
+           <option value = "18-24">18-24</option>
+           <option value = "25-34">25-34</option>
+           <option value = "35-44">35-44</option>
+           <option value = "45-50">45-50</option>
+           <option value = "Over 50">Over 50</option>
+        </select><br/>
+        <label id = "colors">Favorite Color(s)</label><br/>
+        <input type = "checkbox" name = "colors" value = "Red"/>Red<br/>
+        <input type = "checkbox" name = "colors" value = "Blue"/>Blue<br/>
+        <input type = "checkbox" name = "colors" value = "Green"/>Green<br/>
+        <input type = "checkbox" name = "colors" value = "Yellow"/>Yellow<br/>
+        <input type = "checkbox" name = "colors" value = "Purple"/>Purple<br/>
+        <input type = "checkbox" name = "colors" value = "Black"/>Black<br/>
+        <input type = "checkbox" name = "colors" value = "Orange"/>Orange<br/>
+        <input type = "checkbox" name = "colors" value = "Pink"/>Pink<br/>
+        <button type = "submit">Send Form</button>
+        <button type = "reset">Reset</button>
+    </body>
+</html>

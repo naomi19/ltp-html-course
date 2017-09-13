@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+       <style>
+       textarea
+           {
+               width:300px;
+               height:200px;
+           }
+       </style>
+        <form action = "#" method = "post"></form>
+        <label for = "first">First</label>
+        <input type = "text" id = "first" name = "first" required = "required" autocomplete = "off"/><br/>
+        <label for = "last">Last</label>
+        <input type = "text" id = "last" name = "last" required = "required" autocomplete = "off"/><br/>
+        <label for = "email">Email</label>
+        <input type = "text" id = "email" name = "email" required = "required" autocomplete = "off"/><br/>
+        <textarea id = "bio">Type Your Biography</textarea><br/>
+        <input id = "birthdaymonth" placeholder = "Birthday Month" list = "birthday"/>
+        <datalist id = "birthday">
+           <option value = "January"/>
+           <option value = "February"/>
+           <option value = "March"/>
+           <option value = "April"/>
+           <option value = "May"/>
+           <option value = "June"/>
+           <option value = "July"/>
+           <option value = "August"/>
+           <option value = "September"/>
+           <option value = "October"/>
+           <option value = "November"/>
+           <option value = "December"/>
+        </datalist>
+        <form/>
+    </body>
+</html>
